@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 480px;
+  background-color: #3e3c4e;
+  border-radius: 16px;
+  padding: 16px;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #bab8c4;
+
+    margin-bottom: 24px;
+
+    p:first-child {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  > div {
+    margin-block: 12px;
+  }
+}
