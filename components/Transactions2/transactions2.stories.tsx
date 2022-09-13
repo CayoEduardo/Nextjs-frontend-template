@@ -2,7 +2,7 @@ import React from "react";
 
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import Transactions from "./";
+import Transactions from ".";
 
 const transactions = [
   {

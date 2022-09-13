@@ -1,7 +1,7 @@
 import React from "react";
 import { BsCashCoin } from "react-icons/bs";
 import { formatter } from "@/utils/formatter";
-import styles from "./transaction.module.scss";
+import styles from "./transaction2.module.scss";
 interface IAttributes {
   operation: any;
 }

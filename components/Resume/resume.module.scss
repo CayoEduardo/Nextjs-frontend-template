@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  max-width: max-content;
+
+  padding-inline: 16px;
+  padding-block: 32px;
+
+  border: 1px solid white;
+  border-radius: 8px;
+
+  color: white;
+
+  &-item {
+    display: flex;
+    margin-right: 12px;
+  }
+}
+
+.image {
+  border: 2px solid #bab8c4;
+  border-radius: 8px;
+
+  margin-right: 12px;
+
+  min-width: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  max-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

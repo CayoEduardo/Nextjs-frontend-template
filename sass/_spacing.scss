@@ -13,4 +13,34 @@
       margin-block: 1rem;
     }
   }
+
+  &-bottom {
+    &-4 {
+      margin-block: 0.25rem;
+    }
+    &-8 {
+      margin-block: 0.5rem;
+    }
+    &-12 {
+      margin-block: 0.75rem;
+    }
+    &-16 {
+      margin-block: 1rem;
+    }
+  }
+
+  &-top {
+    &-4 {
+      margin-block: 0.25rem;
+    }
+    &-8 {
+      margin-block: 0.5rem;
+    }
+    &-12 {
+      margin-block: 0.75rem;
+    }
+    &-16 {
+      margin-block: 1rem;
+    }
+  }
 }

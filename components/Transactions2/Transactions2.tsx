@@ -1,8 +1,9 @@
 import React, { useMemo, useState, useEffect } from "react";
-import styles from "./transactions.module.scss";
-import Transaction from "../Transaction/Transaction";
+import styles from "./transactions2.module.scss";
+import Transaction2 from "../Transaction2";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { GrMoney } from "react-icons/gr";
+import Button from "../Button";
 interface IAttributes {
   operations?: any;
 }
@@ -69,23 +70,13 @@ const Transactions = ({ attributes = {} }: ITransactionsProps) => {
         </div>
         <div className={styles["buttons-wrapper"]}>
           <div className={styles["button-wrapper"]}>
-            <button
-              onClick={setPositiveOperations}
-              className={styles[`button${isActivePlus ? "-active" : ""}`]}
-            >
-              <AiOutlinePlusCircle fontSize={"1.125rem"} color="green" />
-            </button>
-            <span>{positiveOperations.length}</span>
+            <Button attributes={{ text: "Todos" }} />
           </div>
-
           <div className={styles["button-wrapper"]}>
-            <button
-              onClick={setNegativeOperations}
-              className={styles[`button${isActiveMinus ? "-active" : ""}`]}
-            >
-              <AiOutlineMinusCircle fontSize={"1.125rem"} color="red" />
-            </button>
-            <span>{negativeOperations.length}</span>
+            <Button attributes={{ text: "Entradas" }} />
+          </div>
+          <div className={styles["button-wrapper"]}>
+            <Button attributes={{ text: "Saídas" }} />
           </div>
         </div>
       </header>
@@ -101,7 +92,7 @@ const Transactions = ({ attributes = {} }: ITransactionsProps) => {
         ) : (
           operationsDisplayed?.map((operation: any, index: number) => {
             return (
-              <Transaction
+              <Transaction2
                 key={`${operation["HISTÓRICO"]}-${index}`}
                 attributes={{ operation }}
               />
